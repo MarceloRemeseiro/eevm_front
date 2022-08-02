@@ -28,7 +28,7 @@ function actividad1() {
       </div>
       <div className="container d-flex flex-wrap">
         <div className="col">
-          <img src={url + ""+ data?.data.attributes.ImagenT1.data.attributes.url+""} alt="" />
+          <img src={""+ data?.data.attributes.ImagenT1.data.attributes.url+""} alt="" />
         </div>
         <div className="col text-p fs-5 px-5">
           <ReactMarkdown>

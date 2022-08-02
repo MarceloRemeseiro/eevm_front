@@ -57,7 +57,7 @@ function actividades() {
               <img
                 className="img-fluid"
                 src={
-                  url +
+                
                   "" +
                   data?.data.attributes.ImagenT1.data.attributes.url +
                   ""
@@ -80,7 +80,7 @@ function actividades() {
               <img
                 className="img-fluid"
                 src={
-                  url +
+                  
                   "" +
                   data?.data.attributes.ImagenT2.data.attributes.url +
                   ""
@@ -103,7 +103,7 @@ function actividades() {
               <img
                 className="img-fluid"
                 src={
-                  url +
+                  
                   "" +
                   data?.data.attributes.ImagenT3.data.attributes.url +
                   ""
@@ -126,7 +126,7 @@ function actividades() {
               <img
                 className="img-fluid"
                 src={
-                  url +
+                  
                   "" +
                   data?.data.attributes.ImagenT4.data.attributes.url +
                   ""
@@ -149,7 +149,7 @@ function actividades() {
               <img
                 className="img-fluid"
                 src={
-                  url +
+                  
                   "" +
                   data?.data.attributes.ImagenT5.data.attributes.url +
                   ""
@@ -172,7 +172,7 @@ function actividades() {
               <img
                 className="img-fluid"
                 src={
-                  url +
+                  
                   "" +
                   data?.data.attributes.ImagenT6.data.attributes.url +
                   ""

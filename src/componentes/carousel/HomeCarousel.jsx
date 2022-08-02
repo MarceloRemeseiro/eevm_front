@@ -23,7 +23,7 @@ function homeCarousel() {
           <div className="carousel-item active">
         <Link to={""+data?.data.attributes.Link1+""}>
             <img
-              src={url + ""+ data?.data.attributes.Imagen1.data.attributes.url+""}
+              src={""+ data?.data.attributes.Imagen1.data.attributes.url+""}
               className="d-block w-100"
             />
         </Link>
@@ -31,7 +31,7 @@ function homeCarousel() {
           <div className="carousel-item">
         <Link to={""+data?.data.attributes.Link2+""}>
             <img
-              src={url + ""+ data?.data.attributes.Imagen2.data.attributes.url+""}
+              src={""+ data?.data.attributes.Imagen2.data.attributes.url+""}
               className="d-block w-100"
             />
         </Link>
@@ -39,7 +39,7 @@ function homeCarousel() {
           <div className="carousel-item">
         <Link to={""+data?.data.attributes.Link3+""}>
             <img
-              src={url + ""+ data?.data.attributes.Imagen3.data.attributes.url+""}
+              src={""+ data?.data.attributes.Imagen3.data.attributes.url+""}
               className="d-block w-100"
             />
         </Link>
@@ -48,7 +48,7 @@ function homeCarousel() {
           <div className="carousel-item">
             <Link to={""+data?.data.attributes.Link4+""}>
               <img
-              src={url + ""+ data?.data.attributes.Imagen4.data.attributes.url+""}
+              src={""+ data?.data.attributes.Imagen4.data.attributes.url+""}
               className="d-block w-100"
               /></Link>
           </div>

@@ -40,7 +40,7 @@ function SeriesYoutube() {
                     {data.attributes.Miniatura.data.map((imagen) => (
                       <div>
                         <img
-                          src={Dominio() + "" + imagen.attributes.url + ""}
+                          src={"" + imagen.attributes.url + ""}
                           alt=""
                           className="img-thumbnail rounded"
                           width="800"
