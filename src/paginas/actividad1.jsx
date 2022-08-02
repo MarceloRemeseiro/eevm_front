@@ -1,9 +1,10 @@
-import Datos from "../componentes/API/Datos";
+import {Datos} from "../componentes/API/Datos";
+import {Dominio} from "../componentes/API/Datos";
 import Spinner from "../componentes/spinner/spinner";
 import ReactMarkdown from "react-markdown";
 
 function actividad1() {
-  const url = "http://localhost:8086";
+  const url = Dominio();
   const { data, loading, error } = Datos(url + "/api/home-tarjetas/?populate=*");
   if (loading)
     return (

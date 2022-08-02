@@ -1,42 +1,45 @@
 import Carousel from "../componentes/carousel/carousel";
 import HomeCarousel from "../componentes/carousel/HomeCarousel";
-import TarjetaFotoIzquierda from "../componentes/tarjetas/tarjetaFotoIzquierda"
-import Banner from "../componentes/banner/banner"
-import TarjetaFotoDerecha from "../componentes/tarjetas/tarjetaFotoDerecha"
-import Actividades from "../componentes/actividades/actividades"
-import HomeContacto from "../componentes/contacto/homeContacto"
-import Pastores from "../componentes/pastores/pastores"
+import TarjetaFotoIzquierda from "../componentes/tarjetas/tarjetaFotoIzquierda";
+import Banner from "../componentes/banner/banner";
+import TarjetaFotoDerecha from "../componentes/tarjetas/tarjetaFotoDerecha";
+import Actividades from "../componentes/actividades/actividades";
+import Pastores from "../componentes/pastores/pastores";
 import Testimonios from "../componentes/testimonios/testimonios";
+import Directo from "../componentes/directo/directo";
 
 function home() {
-    return (
-        <div>
-            <div>
-        <Carousel/>
+  return (
+    <div>
+      <div>
+        <Carousel />
       </div>
       <div>
-        <TarjetaFotoIzquierda/>
+        <Directo />
       </div>
       <div>
-        <Banner/>
+        <TarjetaFotoIzquierda />
       </div>
       <div>
-        <TarjetaFotoDerecha/>
+        <Banner />
       </div>
       <div>
-      <Actividades/>
+        <TarjetaFotoDerecha />
       </div>
       <div>
-      <HomeCarousel/>
+        <Actividades />
       </div>
       <div>
-        <Pastores/>
+        <HomeCarousel />
       </div>
       <div>
-        <Testimonios/>
+        <Pastores />
       </div>
-        </div>
-    )
+      <div>
+        <Testimonios />
+      </div>
+    </div>
+  );
 }
 
 export default home;

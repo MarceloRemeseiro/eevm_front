@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
-import Datos from "../API/Datos";
+import {Datos} from "../API/Datos";
+import {Dominio} from "../API/Datos";
 import Spinner from "../spinner/spinner";
 
 function homeCarousel() {
-  const url = "http://localhost:8086";
+  const url = Dominio();
   const { data, loading, error } = Datos(url + "/api/home-slider2/?populate=*");
   if (loading)
     return (

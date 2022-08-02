@@ -1,16 +1,6 @@
 import { Link} from "react-router-dom";
 
 function navbar() {
-  /* var btncontainer = document.getElementById("navbar");
-  var btns = btncontainer.getElementsByClassname("nav-item");
-
-  for(var i=0; i<btns.length; i++){
-    btns[i].addEventListener('click', function () {
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active");
-    this.className += " active";})} */
-
-
   return (
     <nav className="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5 py-lg-0">
       <Link to="/" className="navbar-brand d-flex aling-items-center">
@@ -73,7 +63,7 @@ function navbar() {
             Contacto
           </Link>
           <Link to="dar" className="nav-item nav-link" id="btn">
-            Dar
+            Donar
           </Link>
         </div>
       </div>

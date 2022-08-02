@@ -1,7 +1,7 @@
 function queCreemos() {
-    return (
-        <div>
-            <div
+  return (
+    <div>
+      <div
         className="container-fluid page-header py-5 mb-5 wow fadeIn"
         data-wow-delay="0.1s"
       >
@@ -11,8 +11,8 @@ function queCreemos() {
           </h1>
         </div>
       </div>
-        </div>
-    )
+    </div>
+  );
 }
 
 export default queCreemos;

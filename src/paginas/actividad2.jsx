@@ -1,19 +1,18 @@
-
-import Datos from "../componentes/API/Datos";
+import {Datos} from "../componentes/API/Datos";
+import {Dominio} from "../componentes/API/Datos";
 import Spinner from "../componentes/spinner/spinner";
-import ReactMarkdown from "react-markdown"
-
+import ReactMarkdown from "react-markdown";
 
 function actividad2() {
-    const url = "http://localhost:8086";
-    const { data, loading, error } = Datos(url + "/api/home-tarjetas/?populate=*");
-    if (loading)
-      return (
-        <h1>
-          <Spinner />
-        </h1>
-      );
-    if (error) console.log(error);
+  const url = Dominio();
+  const { data, loading, error } = Datos(url + "/api/home-tarjetas/?populate=*");
+  if (loading)
+    return (
+      <h1>
+        <Spinner />
+      </h1>
+    );
+  if (error) console.log(error);
 
   return (
     <div>

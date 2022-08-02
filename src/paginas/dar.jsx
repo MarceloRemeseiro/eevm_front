@@ -7,7 +7,7 @@ function dar() {
       >
         <div className="container text-center py-5">
           <h1 className="display-4 text-white animated slideInDown mb-4">
-            Dar
+            Donar
           </h1>
         </div>
       </div>

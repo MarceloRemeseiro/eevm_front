@@ -21,11 +21,11 @@ function top() {
         <div className="col-lg-5 px-5 text-end">
           <div className="h-100 d-inline-flex align-items-center">
             <a className="btn btn-square border-end border-start" href="https://www.facebook.com/eevilassardemar"
-            target="_blank">
+            target="_blank" rel="noreferrer">
                 <i className="fab fa-facebook-f"></i></a>
               
               <a className="btn btn-square border-end border-start" href="https://www.youtube.com/user/Jesusviu/featured"
-              target="_blank">
+              target="_blank" rel="noreferrer">
                 <i className="fab fa-youtube"></i>
               </a>   
             {/* <a className="btn btn-square border-end" href="">

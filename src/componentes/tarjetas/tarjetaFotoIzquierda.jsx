@@ -1,16 +1,7 @@
-import Datos from "../API/Datos";
-import Spinner from "../spinner/spinner";
+
 
 function tarjetaFotoIzquierda() {
-  const url = "http://localhost:8086";
-  const { data, loading, error } = Datos(url + "/api/home-slider1");
-  if (loading)
-    return (
-      <h1>
-        <Spinner />
-      </h1>
-    );
-  if (error) console.log(error);
+
 
   return (
     <div className="container-xxl py-5">

@@ -17,6 +17,10 @@ grid
 Pastores
 550*650
 
+Slider2
+1950*500
+
+
 Páginas:
 /
 actividades

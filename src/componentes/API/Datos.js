@@ -1,8 +1,13 @@
 import axios from "axios";
 import { useEffect, useState } from "react"
 
+export function Dominio() {
+    return (
+        "http://localhost:8086"
+    )
+}
 
-function Datos(url) {
+export function Datos(url) {
     const [data, setData] = useState(null);
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(null); 
@@ -24,8 +29,4 @@ function Datos(url) {
     return {data, loading, error};
     
 }
-
-
-export default Datos;
-
 

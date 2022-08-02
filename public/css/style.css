@@ -301,6 +301,9 @@
 .team-item:hover .team-text {
     width: 100%;
 }
+.directo{
+    color:red;
+}
 
 .team-text * {
     transition: .5s;

@@ -22,10 +22,10 @@ function footer() {
               {/* <a className="btn btn-square btn-outline-primary me-1" href="">
                 <i className="fab fa-twitter"></i>
               </a> */}
-              <a className="btn btn-square btn-outline-primary me-1" href="">
+              <a className="btn btn-square btn-outline-primary me-1" href="https://www.facebook.com/eevilassardemar">
                 <i className="fab fa-facebook-f"></i>
               </a>
-              <a className="btn btn-square btn-outline-primary me-1" href="">
+              <a className="btn btn-square btn-outline-primary me-1" href="https://www.youtube.com/user/Jesusviu/featured">
                 <i className="fab fa-youtube"></i>
               </a>
               {/* <a className="btn btn-square btn-outline-primary me-0" href="">
@@ -86,7 +86,7 @@ function footer() {
         <div className="container">
           <div className="row">
             <div className="col-md-6 text-center text-md-start mb-3 mb-md-0">
-              <a href="#">Església de Vilassar de Mar</a>
+              <p>Església de Vilassar de Mar</p>
             </div>
             {/*  <div className="col-md-6 text-center text-md-end">
               Designed By <a href="https://htmlcodex.com">HTML Codex</a>
