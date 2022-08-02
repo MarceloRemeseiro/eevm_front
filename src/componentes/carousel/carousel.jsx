@@ -15,7 +15,7 @@ function carousel() {
       <div id="header-carousel" className="carousel slide" data-bs-ride="carousel">
         <div className="carousel-inner">
           <div className="carousel-item active">
-            <img className="w-100" src={url + ""+ data?.data.attributes.Imagen1.data.attributes.url+""} alt="Image" />
+            <img className="w-100" src={""+ data?.data.attributes.Imagen1.data.attributes.url+""} alt="Image" />
             <div className="carousel-caption">
               <div className="container">
                 <div className="row justify-content-center">
@@ -46,7 +46,7 @@ function carousel() {
             </div>
           </div>
           <div className="carousel-item">
-            <img className="w-100" src={url + ""+ data?.data.attributes.Imagen2.data.attributes.url+""} alt="Image" />
+            <img className="w-100" src={""+ data?.data.attributes.Imagen2.data.attributes.url+""} alt="Image" />
             <div className="carousel-caption">
               <div className="container">
                 <div className="row justify-content-center">
