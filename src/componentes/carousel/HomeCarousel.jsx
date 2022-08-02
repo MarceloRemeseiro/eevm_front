@@ -3,6 +3,7 @@ import {Datos} from "../API/Datos";
 import {Dominio} from "../API/Datos";
 import Spinner from "../spinner/spinner";
 
+
 function homeCarousel() {
   const url = Dominio();
   const { data, loading, error } = Datos(url + "/api/home-slider2/?populate=*");
