@@ -3,7 +3,7 @@ import { useEffect, useState } from "react"
 
 export function Dominio() {
     return (
-        "http://localhost:8086"
+        "https://strapi-production-6045.up.railway.app"
     )
 }
 
