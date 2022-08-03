@@ -3,7 +3,7 @@ import Spinner from "../spinner/spinner";
 
 
 function apiYoutube() {
-    const apiYou="https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=UCIC3BBTqJLN8axplZm2gXog&maxResults=7&order=date&key=AIzaSyDFkaQ0hLqA8nAyaNrZGt_u6VniFSsF6fw";
+    const apiYou=`https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=UCIC3BBTqJLN8axplZm2gXog&maxResults=7&order=date&key=${process.env.REACT_APP_YOUTUBE_KEY}`;
     const jsonYou="youtube.json";
     const { data, loading, error } = Datos(apiYou);
  
