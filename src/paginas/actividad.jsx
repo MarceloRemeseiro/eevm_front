@@ -11,6 +11,13 @@ function actividad() {
           <h1 className="display-4 text-white animated slideInDown mb-4">
             Actividades
           </h1>
+          {/* <h6 className="text-white">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta
+            eligendi earum ab et tempore molestias cupiditate sint consequatur
+            repudiandae aliquid alias nemo, expedita laudantium minus, sapiente
+            nisi rerum possimus asperiores corporis. Porro aliquid velit sunt
+          
+          </h6> */}
         </div>
       </div>
       <Actividades />
