@@ -18,10 +18,12 @@ import Dar from "./paginas/dar";
 import Footer from "./componentes/footer/footer";
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ScrollToTop from "./componentes/scrolltop/scrollTop";
 
 function App() {
   return (
-    <BrowserRouter className="App">
+    
+    <BrowserRouter className="App"><ScrollToTop/>
       <div>
         <Top />
         <Navbar />
