@@ -3,7 +3,8 @@ import {Dominio} from "../componentes/API/Datos";
 import Spinner from "../componentes/spinner/spinner";
 import ReactMarkdown from "react-markdown";
 
-function actividad1() {
+
+function Actividad1() {
   const url = Dominio();
   const { data, loading, error } = Datos(url + "/api/home-tarjetas/?populate=*");
   if (loading)
@@ -39,4 +40,4 @@ function actividad1() {
     </div>
   );
 }
-export default actividad1;
+export default Actividad1;

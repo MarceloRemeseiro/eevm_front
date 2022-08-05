@@ -1,10 +1,12 @@
+import { useQuery } from "@tanstack/react-query";
 import { Link } from "react-router-dom";
 import {Datos} from "../API/Datos";
 import {Dominio} from "../API/Datos";
 import Spinner from "../spinner/spinner";
 
 
-function actividades() {
+
+function Actividades() {
   const url = Dominio();
   const { data, loading, error } = Datos(
     url + "/api/home-tarjetas/?populate=*"
@@ -196,4 +198,4 @@ function actividades() {
   );
 }
 
-export default actividades;
+export default Actividades;

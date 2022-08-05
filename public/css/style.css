@@ -87,6 +87,31 @@
     
 }
 
+.dropM{
+   margin-top: 0 !important;
+}
+
+.dropM li a{
+    padding: 15px;
+    align-items: flex-start;
+    font-size: 2rem !important;
+    color: var(--secondary);
+    justify-content: flex-start;
+}
+
+.dropP{
+    margin-top: 0 !important;
+ }
+ 
+ .dropP li a{
+     padding: 15px;
+     align-items: flex-start;
+     font-size: 1.5rem !important;
+     color: var(--secondary);
+     justify-content: flex-start;
+ }
+
+
 
 .navbar .navbar-nav .nav-link:hover {
     color: var(--primary);

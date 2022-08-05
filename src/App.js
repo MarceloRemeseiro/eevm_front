@@ -1,4 +1,5 @@
 import Top from "./componentes/top/top";
+import { QueryClient, QueryClientProvider } from "react-query";
 import Navbar from "./componentes/navbar/navbar";
 import Home from "./paginas/home";
 import Actividad from "./paginas/actividad";
@@ -19,53 +20,65 @@ import Footer from "./componentes/footer/footer";
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ScrollToTop from "./componentes/scrolltop/scrollTop";
+import Navbar2 from "./componentes/navbar/index";
+import Sidebar from "./componentes/Sidebar";
+import { useState } from "react";
 
-function App() {
+const queryClient = new QueryClient();
+
+export function App() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
-    
-    <BrowserRouter className="App"><ScrollToTop/>
-      <div>
-        <Top />
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />}></Route>
-          <Route path="actividad" element={<Actividad />}></Route>
-          <Route path="media" element={<Media />}></Route>
-          <Route path="misionVision" element={<MisionVision />}></Route>
-          <Route path="queCreemos" element={<QueCreemos />}></Route>
-          <Route path="jesus" element={<Jesus />}></Route>
-          <Route path="pastores" element={<Pastores />}></Route>
-          <Route path="contacto" element={<Contacto />}></Route>
-          <Route path="dar" element={<Dar />}></Route>
-          <Route path="actividad/actividad1" element={<Actividad1 />}></Route>
-          <Route path="actividad/actividad2" element={<Actividad2 />}></Route>
-          <Route path="actividad/actividad3" element={<Actividad3 />}></Route>
-          <Route path="actividad/actividad4" element={<Actividad4 />}></Route>
-          <Route path="actividad/actividad5" element={<Actividad5 />}></Route>
-          <Route path="actividad/actividad6" element={<Actividad6 />}></Route>
-          <Route path="actividad1" element={<Actividad1 />}></Route>
-          <Route path="actividad2" element={<Actividad2 />}></Route>
-          <Route path="actividad3" element={<Actividad3 />}></Route>
-          <Route path="actividad4" element={<Actividad4 />}></Route>
-          <Route path="actividad5" element={<Actividad5 />}></Route>
-          <Route path="actividad6" element={<Actividad6 />}></Route>
-          <Route
-            path="*"
-            element={
-              <div class="m-5 p-5">
-                <div class="fs-1 text-center mt-5 pt-5">
-                  404 - Página no encontrada
-                </div>{" "}
-              </div>
-            }
-          ></Route>
-        </Routes>
-      </div>
-      <div>
-        <Footer />
-      </div>
-    </BrowserRouter>
+    <QueryClientProvider client={queryClient}>
+      <BrowserRouter className="App">
+        <ScrollToTop />
+        <div>
+          <Top />
+          <Sidebar isOpen={isOpen} toggle={toggle} />
+          <Navbar2 toggle={toggle} />
+          <Routes>
+            <Route path="/" element={<Home />}></Route>
+            <Route path="actividad" element={<Actividad />}></Route>
+            <Route path="media" element={<Media />}></Route>
+            <Route path="misionVision" element={<MisionVision />}></Route>
+            <Route path="queCreemos" element={<QueCreemos />}></Route>
+            <Route path="jesus" element={<Jesus />}></Route>
+            <Route path="pastores" element={<Pastores />}></Route>
+            <Route path="contacto" element={<Contacto />}></Route>
+            <Route path="dar" element={<Dar />}></Route>
+            <Route path="actividad/actividad1" element={<Actividad1 />}></Route>
+            <Route path="actividad/actividad2" element={<Actividad2 />}></Route>
+            <Route path="actividad/actividad3" element={<Actividad3 />}></Route>
+            <Route path="actividad/actividad4" element={<Actividad4 />}></Route>
+            <Route path="actividad/actividad5" element={<Actividad5 />}></Route>
+            <Route path="actividad/actividad6" element={<Actividad6 />}></Route>
+            <Route path="actividad1" element={<Actividad1 />}></Route>
+            <Route path="actividad2" element={<Actividad2 />}></Route>
+            <Route path="actividad3" element={<Actividad3 />}></Route>
+            <Route path="actividad4" element={<Actividad4 />}></Route>
+            <Route path="actividad5" element={<Actividad5 />}></Route>
+            <Route path="actividad6" element={<Actividad6 />}></Route>
+            <Route
+              path="*"
+              element={
+                <div class="m-5 p-5">
+                  <div class="fs-1 text-center mt-5 pt-5">
+                    404 - Página no encontrada
+                  </div>{" "}
+                </div>
+              }
+            ></Route>
+          </Routes>
+        </div>
+        <div>
+          <Footer />
+        </div>
+      </BrowserRouter>
+    </QueryClientProvider>
   );
 }
-
-export default App;

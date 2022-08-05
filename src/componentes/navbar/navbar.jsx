@@ -19,21 +19,22 @@ function navbar() {
         className="navbar-toggler"
         data-bs-toggle="collapse"
         data-bs-target="#navbarCollapse"
+       
       >
         <span className="navbar-toggler-icon"></span>
       </button>
       <div className="collapse navbar-collapse" id="navbarCollapse">
         <div className="navbar-nav ms-auto py-3 py-lg-0" id="navbar">
-          <Link to="/" className="nav-item nav-link">
+          <Link to="/" className="nav-item nav-link" id="btn" >
             Inicio
           </Link>
-          <Link to="actividad" className="nav-item nav-link">
+          <Link to="actividad" className="nav-item nav-link" id="btn">
             Actividades
           </Link>
-          <Link to="media" className="nav-item nav-link">
+          <Link to="media" className="nav-item nav-link" id="btn">
             Media
           </Link>
-          <div className="nav-item dropdown">
+          <div className="nav-item dropdown" id="btn">
             <Link
               to="#"
               className="nav-link dropdown-toggle"

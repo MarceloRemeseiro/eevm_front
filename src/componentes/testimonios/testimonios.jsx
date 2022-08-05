@@ -48,7 +48,7 @@ function testimonios() {
           >
             <div
               className="scroll "
-              style={{ height: "20px"}}
+              style={{ height: "200px"}}
             >
               <div>
                 <h5>Nombre</h5>
