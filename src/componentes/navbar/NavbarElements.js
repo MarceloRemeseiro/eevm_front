@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export const Nav = styled.nav`
   background:#F8F9FA;
-  height: 120px;
+  height: 80px;
   /* margin-top: -80px; */
   display: flex;
   justify-content: center;
@@ -50,10 +50,10 @@ export const MobileIcon = styled.div`
   @media screen and (max-width: 945px) {
     display: block;
     position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-100%, 60%);
-    font-size: 1.8rem;
+    top: 0.5rem;
+    right: 2rem;
+    /* transform: translate(-80%, 0%); */
+    font-size: 2.5rem;
     cursor: pointer;
     color: #8D9297;
   }

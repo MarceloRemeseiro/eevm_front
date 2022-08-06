@@ -92,9 +92,11 @@
 }
 
 .dropM li a{
-    padding: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
     align-items: flex-start;
-    font-size: 2rem !important;
+    font-size: 1.5rem !important;
     color: var(--secondary);
     justify-content: flex-start;
 }
@@ -104,11 +106,13 @@
  }
  
  .dropP li a{
-     padding: 15px;
-     align-items: flex-start;
-     font-size: 1.5rem !important;
-     color: var(--secondary);
-     justify-content: flex-start;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    align-items: flex-start;
+    font-size: 1.5rem !important;
+    color: var(--secondary);
+    justify-content: flex-start;
  }
 
 
@@ -171,8 +175,9 @@
     display: flex;
     align-items: center;
     text-align: start;
-    background: rgba(0, 0, 0, .65);
+   /*  background: rgba(0, 0, 0, .65); */
     z-index: 1;
+    overflow: hidden;
 }
 
 .carousel-control-prev,

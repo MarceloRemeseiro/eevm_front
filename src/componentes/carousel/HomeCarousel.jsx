@@ -25,7 +25,7 @@ function homeCarousel() {
         <Link to={""+data?.data.attributes.Link1+""}>
             <img
               src={""+ data?.data.attributes.Imagen1.data.attributes.url+""}
-              className="d-block w-100"
+              className="d-block w-100" alt=""
             />
         </Link>
           </div>
@@ -33,7 +33,7 @@ function homeCarousel() {
         <Link to={""+data?.data.attributes.Link2+""}>
             <img
               src={""+ data?.data.attributes.Imagen2.data.attributes.url+""}
-              className="d-block w-100"
+              className="d-block w-100" alt=""
             />
         </Link>
           </div>
@@ -41,7 +41,7 @@ function homeCarousel() {
         <Link to={""+data?.data.attributes.Link3+""}>
             <img
               src={""+ data?.data.attributes.Imagen3.data.attributes.url+""}
-              className="d-block w-100"
+              className="d-block w-100" alt=""
             />
         </Link>
           </div>
@@ -50,7 +50,7 @@ function homeCarousel() {
             <Link to={""+data?.data.attributes.Link4+""}>
               <img
               src={""+ data?.data.attributes.Imagen4.data.attributes.url+""}
-              className="d-block w-100"
+              className="d-block w-100" alt=""
               /></Link>
           </div>
         

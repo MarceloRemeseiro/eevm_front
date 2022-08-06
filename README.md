@@ -1,6 +1,8 @@
 Imagenes:
 Header
 1920*1080
+o
+1920*800
 
 fotoIzquierda
 700*700 

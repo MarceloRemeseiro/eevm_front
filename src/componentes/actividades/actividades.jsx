@@ -1,4 +1,3 @@
-import { useQuery } from "@tanstack/react-query";
 import { Link } from "react-router-dom";
 import {Datos} from "../API/Datos";
 import {Dominio} from "../API/Datos";

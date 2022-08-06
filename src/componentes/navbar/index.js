@@ -21,8 +21,8 @@ function Navbar2({ toggle }) {
           <NavLogo to="/">
             <img
               src="/img/logo.png"
-              width="100"
-              height="100"
+              width="75"
+              height="75"
               className="d-inline-block"
               alt=""
             />
