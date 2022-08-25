@@ -3,7 +3,7 @@ import { useEffect, useState } from "react"
 
 export function Dominio() {
     return (
-        "https://eevm.herokuapp.com/"
+        "https://eevm.herokuapp.com"
     )
 }
 
