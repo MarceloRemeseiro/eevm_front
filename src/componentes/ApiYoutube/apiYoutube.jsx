@@ -2,14 +2,12 @@ import Spinner from "../spinner/spinner";
 import { useQuery } from "react-query";
 import React from "react";
 
-
-const ApiYoutube = () => {
-
 const videos = async()=> {
   const response =await fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=UCIC3BBTqJLN8axplZm2gXog&maxResults=7&order=date&key=${process.env.REACT_APP_YOUTUBE_KEY}`);
   return response.json();
 }
 
+const ApiYoutube = () => {
 
 const {status, data} =useQuery(["video"], videos,{
   refetchOnMount:false,
