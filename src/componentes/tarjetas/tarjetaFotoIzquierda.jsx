@@ -13,8 +13,9 @@ function tarjetaFotoIzquierda() {
             >
               <img
                 className="position-absolute w-100 h-100"
-                src="img/vilassar.jpg"
+                src="img/historia.png"
                 alt=""
+                              
               />
               <div className="position-absolute top-0 start-0 bg-white pe-3 pb-3">
                 <div className="Tarjeta-2 d-flex flex-column justify-content-center text-center bg-primary p-3">
