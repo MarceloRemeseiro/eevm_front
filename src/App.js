@@ -66,8 +66,8 @@ export function App() {
             <Route
               path="*"
               element={
-                <div class="m-5 p-5">
-                  <div class="fs-1 text-center mt-5 pt-5">
+                <div className="m-5 p-5">
+                  <div className="fs-1 text-center mt-5 pt-5">
                     404 - Página no encontrada
                   </div>{" "}
                 </div>

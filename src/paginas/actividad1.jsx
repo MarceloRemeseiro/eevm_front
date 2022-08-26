@@ -27,9 +27,11 @@ function Actividad1() {
           </h1>
         </div>
       </div>
-      <div className="container d-flex flex-wrap">
-        <div className="col">
-          <img src={""+ data?.data.attributes.ImagenT1.data.attributes.url+""} alt="" />
+      <div className="container d-lg-flex flex-wrap">
+        <div className="col mb-3">
+          <img src={""+ data?.data.attributes.ImagenT1.data.attributes.url+""} alt="" 
+          width="100%"
+          />
         </div>
         <div className="col text-p fs-5 px-5">
           <ReactMarkdown>

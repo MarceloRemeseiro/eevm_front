@@ -178,6 +178,7 @@
    /*  background: rgba(0, 0, 0, .65); */
     z-index: 1;
     overflow: hidden;
+    
 }
 
 .carousel-control-prev,
@@ -187,8 +188,8 @@
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    width: 4rem;
-    height: 4rem;
+    width: 3rem;
+    height: 3rem;
     background-color: var(--dark);
     border: 15px solid var(--dark);
     border-radius: 50px;
@@ -199,6 +200,10 @@
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     color: var(--primary);
+}
+
+.altoCarrousel{
+    max-height: 500px !important;
 }
 
 @media (max-width: 768px) {
@@ -214,10 +219,12 @@
         object-fit: cover;
     }
 
+    
+
     .carousel-control-prev-icon,
     .carousel-control-next-icon {
-        width: 3rem;
-        height: 3rem;
+        width: 2rem;
+        height: 2rem;
         border-width: 12px;
     }
 }
