@@ -26,7 +26,7 @@ function directo() {
         <div className="container ratio ratio-16x9">
           <iframe
             className="container"
-            src={""+data?.data.attributes.Link+""}
+            src={""+"https://www.youtube.com/embed/"+data?.data.attributes.Link.slice(17)+""}
             title="Una Iglesia en la que Dios está obrando | 1 Tesalonicenses 1:1-3 | Ps. Sugel Michelén"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             width={1000}
