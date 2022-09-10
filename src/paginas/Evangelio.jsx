@@ -1,4 +1,4 @@
-function queCreemos() {
+function Evangelio() {
   return (
     <div>
       <div
@@ -7,7 +7,7 @@ function queCreemos() {
       >
         <div className="container text-center py-5">
           <h1 className="display-4 text-white animated slideInDown mb-4">
-            Que Creemos
+            El Evangelio
           </h1>
         </div>
       </div>
@@ -15,4 +15,4 @@ function queCreemos() {
   );
 }
 
-export default queCreemos;
+export default Evangelio;

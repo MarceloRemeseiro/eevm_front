@@ -1,4 +1,4 @@
-function jesus() {
+function Historia() {
   return (
     <div>
       <div
@@ -7,7 +7,7 @@ function jesus() {
       >
         <div className="container text-center py-5">
           <h1 className="display-4 text-white animated slideInDown mb-4">
-            Jesus
+            Nuestra Historias
           </h1>
         </div>
       </div>
@@ -15,4 +15,4 @@ function jesus() {
   );
 }
 
-export default jesus;
+export default Historia;

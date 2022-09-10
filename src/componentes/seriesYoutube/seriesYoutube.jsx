@@ -1,5 +1,5 @@
 /* eslint-disable react/jsx-no-duplicate-props */
-import {Datos} from "../API/Datos";
+import { Datos } from "../API/Datos";
 import { Dominio } from "../API/Datos";
 import Spinner from "../spinner/spinner";
 

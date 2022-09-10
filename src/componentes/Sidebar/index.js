@@ -39,17 +39,15 @@ const Sidebar = ({ isOpen, toggle }) => {
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
-             ↓ SOBRE NOSOTROS ↓
-              </SidebarDrop>
-            <ul
-              class="dropdown-menu dropM"
-              aria-labelledby="dropdownMenu2"
-            >
+              ↓ SOBRE NOSOTROS ↓
+            </SidebarDrop>
+            <ul class="dropdown-menu dropM" aria-labelledby="dropdownMenu2">
               <li>
                 <SidebarLink
                   to="misionVision"
                   class="dropdown-item"
-                  type="button" onClick={toggle}
+                  type="button"
+                  onClick={toggle}
                 >
                   Misión y Visión
                 </SidebarLink>
@@ -58,18 +56,29 @@ const Sidebar = ({ isOpen, toggle }) => {
                 <SidebarLink
                   to="queCreemos"
                   class="dropdown-item"
-                  type="button" onClick={toggle}
+                  type="button"
+                  onClick={toggle}
                 >
                   Que creemos
                 </SidebarLink>
               </li>
               <li>
-                <SidebarLink to="jesus" onClick={toggle} class="dropdown-item" type="button">
-                  Jesús
+                <SidebarLink
+                  to="evangelio"
+                  onClick={toggle}
+                  class="dropdown-item"
+                  type="button"
+                >
+                  EL Evangelio
                 </SidebarLink>
               </li>
               <li>
-                <SidebarLink to="pastores" onClick={toggle} class="dropdown-item" type="button">
+                <SidebarLink
+                  to="pastores"
+                  onClick={toggle}
+                  class="dropdown-item"
+                  type="button"
+                >
                   Pastores
                 </SidebarLink>
               </li>

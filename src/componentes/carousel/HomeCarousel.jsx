@@ -1,8 +1,7 @@
 import { Link } from "react-router-dom";
-import {Datos} from "../API/Datos";
-import {Dominio} from "../API/Datos";
+import { Datos } from "../API/Datos";
+import { Dominio } from "../API/Datos";
 import Spinner from "../spinner/spinner";
-
 
 function homeCarousel() {
   const url = Dominio();
@@ -16,49 +15,69 @@ function homeCarousel() {
   if (error) console.log(error);
   return (
     <div
-      id="carouselExampleControlsNoTouching"
+      id="carouselExampleControls"
       className="carousel slide"
-      data-bs-touch="false"
+      data-bs-ride="carousel"
     >
       <div className="carousel-inner">
-          <div className="carousel-item active">
-        <Link to={""+data?.data.attributes.Link1+""}>
+        <div className="carousel-item active">
+          <a
+            href={"" + data?.data.attributes.Link1 + ""}
+            target="_blank"
+            rel="noreferrer"
+          >
             <img
-              src={""+ data?.data.attributes.Imagen1.data.attributes.url+""}
-              className="d-block w-100" alt=""
+              src={"" + data?.data.attributes.Imagen1.data.attributes.url + ""}
+              className="d-block w-100"
+              alt=""
             />
-        </Link>
-          </div>
-          <div className="carousel-item">
-        <Link to={""+data?.data.attributes.Link2+""}>
+          </a>
+        </div>
+        <div className="carousel-item">
+          <a
+            href={"" + data?.data.attributes.Link2 + ""}
+            target="_blank"
+            rel="noreferrer"
+          >
             <img
-              src={""+ data?.data.attributes.Imagen2.data.attributes.url+""}
-              className="d-block w-100" alt=""
+              src={"" + data?.data.attributes.Imagen2.data.attributes.url + ""}
+              className="d-block w-100"
+              alt=""
             />
-        </Link>
-          </div>
-          <div className="carousel-item">
-        <Link to={""+data?.data.attributes.Link3+""}>
+          </a>
+        </div>
+        <div className="carousel-item">
+          <a
+            href={"" + data?.data.attributes.Link3 + ""}
+            target="_blank"
+            rel="noreferrer"
+          >
             <img
-              src={""+ data?.data.attributes.Imagen3.data.attributes.url+""}
-              className="d-block w-100" alt=""
+              src={"" + data?.data.attributes.Imagen3.data.attributes.url + ""}
+              className="d-block w-100"
+              alt=""
             />
-        </Link>
-          </div>
-        
-          <div className="carousel-item">
-            <Link to={""+data?.data.attributes.Link4+""}>
-              <img
-              src={""+ data?.data.attributes.Imagen4.data.attributes.url+""}
-              className="d-block w-100" alt=""
-              /></Link>
-          </div>
-        
+          </a>
+        </div>
+
+        <div className="carousel-item">
+          <a
+            href={"" + data?.data.attributes.Link4 + ""}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              src={"" + data?.data.attributes.Imagen4.data.attributes.url + ""}
+              className="d-block w-100"
+              alt=""
+            />
+          </a>
+        </div>
       </div>
       <button
         className="carousel-control-prev"
         type="button"
-        data-bs-target="#carouselExampleControlsNoTouching"
+        data-bs-target="#carouselExampleControls"
         data-bs-slide="prev"
       >
         <span className="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -67,7 +86,7 @@ function homeCarousel() {
       <button
         className="carousel-control-next"
         type="button"
-        data-bs-target="#carouselExampleControlsNoTouching"
+        data-bs-target="#carouselExampleControls"
         data-bs-slide="next"
       >
         <span className="carousel-control-next-icon" aria-hidden="true"></span>

@@ -32,9 +32,9 @@ function home() {
       <div>
         <HomeCarousel />
       </div>
-      <div>
+      {/* <div>
         <Pastores />
-      </div>
+      </div> */}
       <div>
         <Testimonios />
       </div>

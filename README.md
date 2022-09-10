@@ -1,27 +1,24 @@
 Imagenes:
-Header
-1920*1080
-o
-1920*800
+Slider 1
+1920\*600
 
 fotoIzquierda
-700*700 
+600\*375
 
 Banner
-500*600 x 4
+500\*600 x 4
 
 Foto derecha
-700*700
+600\*375
 
 grid
-550*400
+550\*400
 
 Pastores
-550*650
+550\*650
 
 Slider2
-1950*500
-
+1950\*500
 
 Páginas:
 /
@@ -39,11 +36,6 @@ queCreemos
 jesus
 pastores
 contacto
-
-
-
-
-
 
 # Getting Started with Create React App
 

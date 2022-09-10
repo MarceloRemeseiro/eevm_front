@@ -1,9 +1,7 @@
 import { Link } from "react-router-dom";
-import {Datos} from "../API/Datos";
-import {Dominio} from "../API/Datos";
+import { Datos } from "../API/Datos";
+import { Dominio } from "../API/Datos";
 import Spinner from "../spinner/spinner";
-
-
 
 function Actividades() {
   const url = Dominio();
@@ -53,15 +51,12 @@ function Actividades() {
           </div>
         </div>
         <div className="row g-4 justify-content-center">
-          <div className={"" + act1 + ""} data-wow-delay="0.1s">
+          <div className={"" + act1 + ""} data-wow-delay="0.c1s">
             <div className="service-item bg-light overflow-hidden h-100">
               <img
                 className="img-fluid"
                 src={
-                
-                  "" +
-                  data?.data.attributes.ImagenT1.data.attributes.url +
-                  ""
+                  "" + data?.data.attributes.ImagenT1.data.attributes.url + ""
                 }
                 alt=""
               />
@@ -81,10 +76,7 @@ function Actividades() {
               <img
                 className="img-fluid"
                 src={
-                  
-                  "" +
-                  data?.data.attributes.ImagenT2.data.attributes.url +
-                  ""
+                  "" + data?.data.attributes.ImagenT2.data.attributes.url + ""
                 }
                 alt=""
               />
@@ -104,10 +96,7 @@ function Actividades() {
               <img
                 className="img-fluid"
                 src={
-                  
-                  "" +
-                  data?.data.attributes.ImagenT3.data.attributes.url +
-                  ""
+                  "" + data?.data.attributes.ImagenT3.data.attributes.url + ""
                 }
                 alt=""
               />
@@ -127,10 +116,7 @@ function Actividades() {
               <img
                 className="img-fluid"
                 src={
-                  
-                  "" +
-                  data?.data.attributes.ImagenT4.data.attributes.url +
-                  ""
+                  "" + data?.data.attributes.ImagenT4.data.attributes.url + ""
                 }
                 alt=""
               />
@@ -150,10 +136,7 @@ function Actividades() {
               <img
                 className="img-fluid"
                 src={
-                  
-                  "" +
-                  data?.data.attributes.ImagenT5.data.attributes.url +
-                  ""
+                  "" + data?.data.attributes.ImagenT5.data.attributes.url + ""
                 }
                 alt=""
               />
@@ -173,10 +156,7 @@ function Actividades() {
               <img
                 className="img-fluid"
                 src={
-                  
-                  "" +
-                  data?.data.attributes.ImagenT6.data.attributes.url +
-                  ""
+                  "" + data?.data.attributes.ImagenT6.data.attributes.url + ""
                 }
                 alt=""
               />

@@ -15,7 +15,7 @@ function pastores() {
         <div className="container">
           <div className="row g-5">
             <div className="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-              <div className="Tarjeta-1 position-relative overflow-hidden ps-5">
+              <div className="Tarjeta-1 position-relative overflow-hidden ">
                 <img
                   className="position-absolute w-100 h-500"
                   src="img/team-1.jpg"
@@ -57,7 +57,7 @@ function pastores() {
         <div className="container">
           <div className="row g-5">
             <div className="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-              <div className="Tarjeta-1 position-relative overflow-hidden ps-5">
+              <div className="Tarjeta-1 position-relative overflow-hidden ">
                 <img
                   className="position-absolute w-100 h-500"
                   src="img/team-2.jpg"
@@ -99,7 +99,7 @@ function pastores() {
         <div className="container">
           <div className="row g-5">
             <div className="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-              <div className="Tarjeta-1 position-relative overflow-hidden ps-5">
+              <div className="Tarjeta-1 position-relative overflow-hidden">
                 <img
                   className="position-absolute w-100 h-500"
                   src="img/team-3.jpg"
