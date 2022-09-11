@@ -34,7 +34,7 @@ function banner() {
                 Aliqu diam amet diam et eos erat ipsum lorem stet lorem sit
                 clita duo justo erat amet
               </p>
-              <Link to="misionVision" className="text-white small" href="">
+              <Link to="pastores" className="text-white small" href="">
                 Leer mas<i className="fa fa-arrow-right ms-3"></i>
               </Link>
             </div>
@@ -54,7 +54,7 @@ function banner() {
                 Aliqu diam amet diam et eos erat ipsum lorem stet lorem sit
                 clita duo justo erat amet
               </p>
-              <Link to="queCreemos" className="text-white small" href="">
+              <Link to="historia" className="text-white small" href="">
                 Leer mas<i className="fa fa-arrow-right ms-3"></i>
               </Link>
             </div>

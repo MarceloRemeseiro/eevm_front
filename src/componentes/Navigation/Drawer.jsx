@@ -61,7 +61,7 @@ const SDrawer = styled.div`
   position: absolute;
   top: 0;
   height: 100vh;
-  width: 60%;
+  width: 100%;
   background-color: rgb(248, 249, 250);
   transition: 0.3s ease;
   -webkit-box-shadow: 5px 0px 5px 0px rgba(0, 0, 0, 0.75);
@@ -81,7 +81,7 @@ const NavRoute = styled(Link)`
   display: flex;
   text-decoration: none;
   color: black;
-  font-size: 3vw;
+  font-size: 4vw;
   padding: 0.5rem;
 `;
 
@@ -93,7 +93,7 @@ const LoginButton = styled.button`
   border-radius: 1rem;
   transition: 0.3s ease;
   color: rgb(248, 249, 250);
-  font-size: 3vw;
+  font-size: 5vw;
   &:hover {
     transition: 0.3s ease;
     border: 1px solid transparent;

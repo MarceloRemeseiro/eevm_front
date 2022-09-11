@@ -33,7 +33,7 @@ const SubRoutesContainer = styled.div`
 const SMenu = styled.div``;
 
 const MenuButton = styled.div`
-  font-size: 3vw;
+  font-size: 4vw;
   color: #0a0a0a;
   padding: 0.5rem;
   display: flex;
@@ -44,6 +44,6 @@ const MenuButton = styled.div`
 const SubRoute = styled(Link)`
   text-decoration: none;
   color: #0a0a0a;
-  padding: 0.5rem;
-  font-size: 3vw;
+  padding: 0.7rem;
+  font-size: 4vw;
 `;
