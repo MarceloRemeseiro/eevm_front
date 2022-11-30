@@ -238,6 +238,13 @@
   object-fit: cover;
 }
 
+.actividades h5 {
+  color: var(--dark);
+}
+.actividades p {
+  color: var(--secondary);
+}
+
 /*** Facts ***/
 .facts-overlay {
   position: absolute;

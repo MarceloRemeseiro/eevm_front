@@ -3,7 +3,7 @@ import { Datos } from "../API/Datos";
 import { Dominio } from "../API/Datos";
 import Spinner from "../spinner/spinner";
 
-function Actividades() {
+function Actividades({ enlace }) {
   const url = Dominio();
   const { data, loading, error } = Datos(
     url + "/api/home-tarjetas/?populate=*"
@@ -41,7 +41,7 @@ function Actividades() {
       : "d-none";
   console.log(act1);
   return (
-    <div className="container-xxl py-5">
+    <div className="container-xxl py-5 actividades">
       <div className="container">
         <div className="row g-5 align-items-end mb-5">
           <div className="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -60,7 +60,8 @@ function Actividades() {
                 }
                 alt=""
               />
-              <Link to="actividad1" className="small">
+
+              <Link to={"" + enlace + ""} className="small">
                 <div className="service-text position-relative text-center h-100 p-4">
                   <h5 className="mb-3">{data?.data.attributes.TituloT1}</h5>
                   <p>{data?.data.attributes.DescripcionT1}</p>

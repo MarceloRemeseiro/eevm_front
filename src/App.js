@@ -19,18 +19,11 @@ import Footer from "./componentes/footer/footer";
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ScrollToTop from "./componentes/scrolltop/scrollTop";
-import { useState } from "react";
 import Navigation from "./componentes/Navigation/Navigation";
 
 const queryClient = new QueryClient();
 
 export function App() {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggle = () => {
-    setIsOpen(!isOpen);
-  };
-
   return (
     <>
       <QueryClientProvider client={queryClient}>
@@ -38,8 +31,6 @@ export function App() {
         <BrowserRouter className="App">
           <ScrollToTop />
 
-          {/*  <Sidebar isOpen={isOpen} toggle={toggle} />
-          <Navbar2 toggle={toggle} /> */}
           <div style={{ position: "sticky", top: 0, left: 0, zIndex: 999 }}>
             <Navigation />
           </div>

@@ -27,7 +27,7 @@ function home() {
         <TarjetaFotoDerecha />
       </div>
       <div>
-        <Actividades />
+        <Actividades enlace="actividad1" />
       </div>
       <div>
         <HomeCarousel />
