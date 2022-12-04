@@ -6,7 +6,7 @@ import Spinner from "../spinner/spinner";
 function Actividades({ enlace }) {
   const url = Dominio();
   const { data, loading, error } = Datos(
-    url + "/api/home-tarjetas/?populate=*"
+    url + "/api/tarjetas-inicio/?populate=*"
   );
   if (loading)
     return (
@@ -61,7 +61,7 @@ function Actividades({ enlace }) {
                 alt=""
               />
 
-              <Link to={"" + enlace + ""} className="small">
+              <Link to="/actividad1" className="small">
                 <div className="service-text position-relative text-center h-100 p-4">
                   <h5 className="mb-3">{data?.data.attributes.TituloT1}</h5>
                   <p>{data?.data.attributes.DescripcionT1}</p>
@@ -81,7 +81,7 @@ function Actividades({ enlace }) {
                 }
                 alt=""
               />
-              <Link to="actividad2" className="small">
+              <Link to="/actividad2" className="small">
                 <div className="service-text position-relative text-center h-100 p-4">
                   <h5 className="mb-3">{data?.data.attributes.TituloT2}</h5>
                   <p>{data?.data.attributes.DescripcionT2}</p>
@@ -101,7 +101,7 @@ function Actividades({ enlace }) {
                 }
                 alt=""
               />
-              <Link to="actividad3" className="small">
+              <Link to="/actividad3" className="small">
                 <div className="service-text position-relative text-center h-100 p-4">
                   <h5 className="mb-3">{data?.data.attributes.TituloT3}</h5>
                   <p>{data?.data.attributes.DescripcionT3}</p>
@@ -121,7 +121,7 @@ function Actividades({ enlace }) {
                 }
                 alt=""
               />
-              <Link to="actividad4" className="small">
+              <Link to="/actividad4" className="small">
                 <div className="service-text position-relative text-center h-100 p-4">
                   <h5 className="mb-3">{data?.data.attributes.TituloT4}</h5>
                   <p>{data?.data.attributes.DescripcionT4}</p>
@@ -141,7 +141,7 @@ function Actividades({ enlace }) {
                 }
                 alt=""
               />
-              <Link to="actividad5" className="small">
+              <Link to="/actividad5" className="small">
                 <div className="service-text position-relative text-center h-100 p-4">
                   <h5 className="mb-3">{data?.data.attributes.TituloT5}</h5>
                   <p>{data?.data.attributes.DescripcionT5}</p>
@@ -161,7 +161,7 @@ function Actividades({ enlace }) {
                 }
                 alt=""
               />
-              <Link to="actividad6" className="small">
+              <Link to="/actividad6" className="small">
                 <div className="service-text position-relative text-center h-100 p-4">
                   <h5 className="mb-3">{data?.data.attributes.TituloT6}</h5>
                   <p>{data?.data.attributes.DescripcionT6}</p>

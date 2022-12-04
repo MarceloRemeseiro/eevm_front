@@ -8,6 +8,7 @@ import Actividad3 from "./paginas/actividad3";
 import Actividad4 from "./paginas/actividad4";
 import Actividad5 from "./paginas/actividad5";
 import Actividad6 from "./paginas/actividad6";
+import TempsJunts from "./paginas/TempsJunts";
 import Media from "./paginas/media";
 import MisionVision from "./paginas/misionVision";
 import Historia from "./paginas/historia";
@@ -45,37 +46,14 @@ export function App() {
               <Route path="pastores" element={<Pastores />}></Route>
               <Route path="contacto" element={<Contacto />}></Route>
               <Route path="donar" element={<Dar />}></Route>
-              <Route
-                path="actividad/actividad1"
-                element={<Actividad1 />}
-              ></Route>
-
-              <Route
-                path="actividad/actividad2"
-                element={<Actividad2 />}
-              ></Route>
-              <Route
-                path="actividad/actividad3"
-                element={<Actividad3 />}
-              ></Route>
-              <Route
-                path="actividad/actividad4"
-                element={<Actividad4 />}
-              ></Route>
-              <Route
-                path="actividad/actividad5"
-                element={<Actividad5 />}
-              ></Route>
-              <Route
-                path="actividad/actividad6"
-                element={<Actividad6 />}
-              ></Route>
               <Route path="actividad1" element={<Actividad1 />}></Route>
               <Route path="actividad2" element={<Actividad2 />}></Route>
               <Route path="actividad3" element={<Actividad3 />}></Route>
               <Route path="actividad4" element={<Actividad4 />}></Route>
               <Route path="actividad5" element={<Actividad5 />}></Route>
               <Route path="actividad6" element={<Actividad6 />}></Route>
+              <Route path="tempsjunts" element={<TempsJunts />}></Route>
+
               <Route
                 path="*"
                 element={

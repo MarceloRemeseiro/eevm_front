@@ -5,7 +5,7 @@ import ReactMarkdown from "react-markdown";
 
 function actividad2() {
   const url = Dominio();
-  const { data, loading, error } = Datos(url + "/api/home-tarjetas/?populate=*");
+  const { data, loading, error } = Datos(url + "/api/tarjetas-inicio/?populate=*");
   if (loading)
     return (
       <h1>

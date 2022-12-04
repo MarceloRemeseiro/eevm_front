@@ -37,16 +37,14 @@ function SeriesYoutube() {
                   rel="noreferrer"
                 >
                   <div className="">
-                    {data.attributes.Miniatura.data.map((imagen) => (
-                      <div>
-                        <img
-                          src={"" + imagen.attributes.url + ""}
-                          alt=""
-                          className="img-thumbnail rounded"
-                          width="800"
-                        />
-                      </div>
-                    ))}
+                    <img
+                      src={
+                        "" + data.attributes.Miniatura.data.attributes.url + ""
+                      }
+                      alt=""
+                      className="img-thumbnail rounded"
+                      width="800"
+                    />
                   </div>
                 </a>
               </div>

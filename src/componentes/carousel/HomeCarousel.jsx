@@ -5,7 +5,7 @@ import Spinner from "../spinner/spinner";
 
 function homeCarousel() {
   const url = Dominio();
-  const { data, loading, error } = Datos(url + "/api/home-slider2/?populate=*");
+  const { data, loading, error } = Datos(url + "/api/Slider2/?populate=*");
   if (loading)
     return (
       <h1>
@@ -22,7 +22,7 @@ function homeCarousel() {
       <div className="carousel-inner">
         <div className="carousel-item active">
           <a
-            href={"" + data?.data.attributes.Link1 + ""}
+            href={data?.data.attributes.Link1}
             target="_blank"
             rel="noreferrer"
           >
@@ -35,7 +35,7 @@ function homeCarousel() {
         </div>
         <div className="carousel-item">
           <a
-            href={"" + data?.data.attributes.Link2 + ""}
+            href={data?.data.attributes.Link2}
             target="_blank"
             rel="noreferrer"
           >
@@ -48,7 +48,7 @@ function homeCarousel() {
         </div>
         <div className="carousel-item">
           <a
-            href={"" + data?.data.attributes.Link3 + ""}
+            href={data?.data.attributes.Link3}
             target="_blank"
             rel="noreferrer"
           >
@@ -62,7 +62,7 @@ function homeCarousel() {
 
         <div className="carousel-item">
           <a
-            href={"" + data?.data.attributes.Link4 + ""}
+            href={data?.data.attributes.Link4}
             target="_blank"
             rel="noreferrer"
           >

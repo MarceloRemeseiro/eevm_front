@@ -5,7 +5,7 @@ import CarouselStatic from "./carouselStatic";
 
 function carousel() {
   const url = Dominio();
-  const { data, loading, error } = Datos(url + "/api/home-slider1/?populate=*");
+  const { data, loading, error } = Datos(url + "/api/slider/?populate=*");
   if (loading)
     return (
       <div>
@@ -41,20 +41,20 @@ function carousel() {
             <div className="carousel-caption">
               <div className="container">
                 <div className="row justify-content-center">
-                  <div className="carousel-content ">
+                  <div className="carousel-content mt-1">
                     <h5 className="text-light text-uppercase mb-3 animated slideInDown">
                       {data?.data.attributes.TituloPeque1}
                     </h5>
                     <h1 className="display-5 text-light mb-3 animated slideInDown">
                       {data?.data.attributes.TituloGrande1}
                     </h1>
-
-                    <Link
-                      to={"" + data?.data.attributes.LinkS1 + ""}
-                      className={"" + act2 + ""}
+                    
+                    <a
+                      href={data?.data.attributes.LinkS1} target="_blank" rel="noreferrer"
+                      className={"" + act1 + ""}
                     >
                       Mas detalles
-                    </Link>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -78,12 +78,12 @@ function carousel() {
                     <h1 className="display-5 text-light mb-3 animated slideInDown">
                       {data?.data.attributes.TituloGrande2}
                     </h1>
-                    <Link
-                      to={"" + data?.data.attributes.LinkS2 + ""}
-                      className={"" + act1 + ""}
+                    <a
+                      href={data?.data.attributes.LinkS2} target="_blank" rel="noreferrer"
+                      className={"" + act2 + ""}
                     >
                       Mas detalles
-                    </Link>
+                    </a>
                   </div>
                 </div>
               </div>
